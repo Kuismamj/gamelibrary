@@ -1,0 +1,17 @@
+body {
+  background: url("/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(214, 210, 210);
+  font-family: copperplate, "Segoe UI Emoji";
+  font-size: 1rem;
+  justify-items: center;
+}
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(214, 210, 210);
+}
