@@ -17,7 +17,7 @@ const Game = mongoose.model("Game", gameSchema)
 
 // Yhteys MongoDB:hen
 mongoose
-  .connect("mongodb://localhost:27017/videogames")
+  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/videogames")
   .then(() => console.log("Yhteys MongoDB:hen onnistui"))
   .catch((err) => console.error("MongoDB-yhteysvirhe:", err))
 
