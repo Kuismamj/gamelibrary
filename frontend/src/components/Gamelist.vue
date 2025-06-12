@@ -108,7 +108,9 @@ export default defineComponent({
 
     const fetchGames = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/games")
+        const response = await axios.get(
+          "https://gamelibrary-tjij.onrender.com/games"
+        )
         games.value = response.data
       } catch (error) {
         console.error("Pelit ei latautunut:", error)
